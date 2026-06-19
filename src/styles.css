@@ -1,3 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "tailwindcss";
+@import 'tailwindcss';
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: royalblue;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+}

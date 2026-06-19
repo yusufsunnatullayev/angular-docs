@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div class="p-4 flex items-center gap-3">
+  @for (tab of tabs; track $index) {
+    <button [routerLink]="tab.link">
+      {{ tab.label }}
+    </button>
+  }
+</div>

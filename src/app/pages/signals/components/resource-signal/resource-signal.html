@@ -1,0 +1,13 @@
+<div class="flex flex-col gap-3">
+  <h1>Resource Signal</h1>
+  <div class="flex items-center gap-3">
+    @if (usersResource.isLoading()) {
+      <span>Loading...</span>
+    } @else if (usersResource.hasValue()) {
+      <span>Result: {{ usersResource.value() }}</span>
+    } @else if (usersResource.error()) {
+      <span>Something went wrong!, "Random number is below 3"</span>
+    }
+  </div>
+  <button (click)="reload()" class="w-20">Reload</button>
+</div>

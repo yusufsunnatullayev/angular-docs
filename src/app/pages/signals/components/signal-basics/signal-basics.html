@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-3">
+  <h1>Signal Basics</h1>
+  <div class="flex items-center gap-3">
+    <span>Count: {{ count() }}</span>
+    <span>Doubled: {{ doubledCount() }}</span>
+  </div>
+  <div class="flex items-center gap-2">
+    <button (click)="decerement()">-</button>
+    <button (click)="reset()">Reset</button>
+    <button (click)="increment()">+</button>
+  </div>
+</div>

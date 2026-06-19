@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-3">
+  <h1>Linked Signal</h1>
+  <div class="flex items-center gap-3">
+    <span>Shipping method: {{ selectedOption().name }}</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <button (click)="changeShippingOptions()">Change options</button>
+  </div>
+</div>
