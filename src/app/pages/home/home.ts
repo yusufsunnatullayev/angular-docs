@@ -18,5 +18,9 @@ export class Home {
       label: 'Signals',
       link: '/signals',
     },
+    {
+      label: 'Components',
+      link: '/components',
+    },
   ];
 }
