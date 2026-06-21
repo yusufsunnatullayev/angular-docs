@@ -1,0 +1,15 @@
+<div class="flex flex-col gap-3">
+  <h1>Referencing Elements (viewChild and contentChild)</h1>
+  <div class="flex items-center gap-3">
+    <div class="flex flex-col gap-2">
+      <span>VIEW CHILD</span>
+      <app-parent />
+    </div>
+    <div class="flex flex-col gap-2">
+      <span>CONTENT CHILD</span>
+      <app-parent-card>
+        <p #contentBody>This is content child projected part</p>
+      </app-parent-card>
+    </div>
+  </div>
+</div>
