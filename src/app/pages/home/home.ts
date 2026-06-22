@@ -26,5 +26,9 @@ export class Home {
       label: 'Templates',
       link: '/templates',
     },
+    {
+      label: 'Directives',
+      link: '/directives',
+    },
   ];
 }

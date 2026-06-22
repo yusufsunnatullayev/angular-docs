@@ -18,4 +18,8 @@ export const routes: Routes = [
     path: 'templates',
     loadComponent: () => import('./pages/templates/templates').then((m) => m.Templates),
   },
+  {
+    path: 'directives',
+    loadComponent: () => import('./pages/directives/directives').then((m) => m.Directives),
+  },
 ];
