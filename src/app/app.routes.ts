@@ -14,4 +14,8 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/components-section/components-section').then((m) => m.ComponentsSection),
   },
+  {
+    path: 'templates',
+    loadComponent: () => import('./pages/templates/templates').then((m) => m.Templates),
+  },
 ];

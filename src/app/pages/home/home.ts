@@ -22,5 +22,9 @@ export class Home {
       label: 'Components',
       link: '/components',
     },
+    {
+      label: 'Templates',
+      link: '/templates',
+    },
   ];
 }

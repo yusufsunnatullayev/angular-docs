@@ -1,0 +1,15 @@
+<div class="flex flex-col gap-3">
+  <h1>NgTemplateOutlet</h1>
+
+  <ng-container
+    [ngTemplateOutlet]="myFragment"
+    [ngTemplateOutletContext]="{ $implicit: 'Yusuf' }"
+  ></ng-container>
+
+  <ng-template #myFragment let-name>
+    <div class="flex flex-col gap-2">
+      <h2>This is my cutom fragment</h2>
+      <span>This is data passed from renderer: {{ name }}</span>
+    </div>
+  </ng-template>
+</div>
