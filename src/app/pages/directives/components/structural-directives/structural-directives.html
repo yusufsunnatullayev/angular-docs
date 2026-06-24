@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-3">
+  <h1>Structural Directives</h1>
+  <div class="flex items-center gap-3">
+    <ng-container *yTemplateOutlet="customTemplate; context: { username: 'Behruz' }"></ng-container>
+  </div>
+
+  <ng-template #customTemplate let-name="username">
+    <div class="w-80 h-20 rounded-md flex items-center justify-between bg-gray-200 p-4">
+      <span>This is the yCustom template: my name: {{ name }}</span>
+    </div>
+  </ng-template>
+</div>
