@@ -30,5 +30,9 @@ export class Home {
       label: 'Directives',
       link: '/directives',
     },
+    {
+      label: 'Dependency Injection',
+      link: '/di',
+    },
   ];
 }
